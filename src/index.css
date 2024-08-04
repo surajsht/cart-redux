@@ -11,3 +11,25 @@ html {
 body {
   font-size: 1.6rem;
 }
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.product-item > *:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.product-item img {
+  height: 24rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-item span {
+  display: block;
+}
